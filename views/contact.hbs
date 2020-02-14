@@ -1,0 +1,48 @@
+{{> header }}
+<div class="main">
+<h1>Contact Me</h1>
+<p style="text-align:center">
+Let us give you more details about me. Please fill out the form below.
+
+</p>
+<div class="row" style="padding-left:25%;padding-top:20px;height:250px">
+<form action="/contactre" id="contact-form" method="post" role="form"  onsubmit="return submitEmailForm(this);">
+<div class="msg" id="msg"></div>
+	<table style="width:50%">
+		<tr>
+	<td class="col">
+    	<label for="name">Name:</label>
+   </td> 
+   <td>
+    <input id="name" name="name" type="text" placeholder="Your name" required>
+	</td>
+	<tr>
+	<td class="col">
+  	  <label for="email">Email:</label>
+   </td> 
+   <td>
+    <input id="email" name="email"  type="text"placeholder="Your email" required>
+    </td>
+    </tr>
+    <tr>
+    <td class="col">
+    <label for="message">Message:</label>
+    </td>
+   <td>
+
+    <textarea  id="message"   name="message" placeholder="Enter your message here"   required>
+    </textarea>
+</td>
+</tr>
+<tr>
+<td class="col">
+    
+ </td>
+ <td><button type="submit">Submit</button></td>
+		</tr>
+		 
+</form>
+	</table>
+</div>
+</div>
+{{> footer }}
